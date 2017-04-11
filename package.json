@@ -1,0 +1,17 @@
+{
+  "name": "comcierge_pkg",
+  "version": "1.0.0",
+  "description": "Comcierge package",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.25"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Matteri, Clay Klinedinst, Nick Scheuer",
+  "license": "ISC"
+}

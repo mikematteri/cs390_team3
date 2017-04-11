@@ -1,0 +1,23 @@
+changes to comcierge database
+============================
++Add hasTakenQuestionnaire bool attribute to users table
+
++May need to add a userPrefs table
+	> quick design idea: userPrefs->entryID (PK), userName (FK), tagName (FK), tagValue
+
+	> tagValue = (tagValue + [new value])/2
+		> Problem with this approach: changes would be miniscule or nonexistent each time, and so would not provide a proper average
+	
+
+	> other idea: userPrefs->entryID (PK), userName (FK), tagName (FK), comicName (FK), tagValue
+	> advantage: can track unique tag value from comic, and can update it easily (more easily, anyhow)
+
++Recall that tagging should inherit the comic's rating value, so check for that value when updating tags (especially in the case of a new tag being added) 
+
++Remember, collection names are:
+	comicsData
+	favorites
+	tagsData
+	userData
+	userPrefs
+	users
